@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/splash.jpg");
+  background-size: cover; 
+  height: 30vh;
+}
+
+.title {
+  padding: 0.2em 0.3em;
+  font-size: 4em;
+  text-align: center;
+  color: black;
+  background-color: rgba(255,255,255,0.5);
+}

@@ -1,0 +1,6 @@
+<mat-nav-list class="nav-list">
+  <a mat-list-item
+    *ngFor="let page of pages"
+    [href]="page.link"
+    class="nav-list-item">{{page.name}}</a>
+</mat-nav-list>

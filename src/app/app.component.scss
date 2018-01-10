@@ -1,0 +1,38 @@
+.side-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 40vw;
+  min-width: 130px;
+  max-width: 250px;
+
+  @media (min-width: 600px) {
+    font-size: 1.1em;
+  }
+}
+
+.side-content {
+  height: 100%;
+}
+
+.toolbar {
+  position: relative;
+  z-index: 3;
+}
+
+.toolbar-menu-icon {
+  height: 36px;
+  width: 36px;
+  padding-top: 7px;
+  line-height: 36px;
+  font-size: 36px;
+}
+.toolbar-push {
+  flex-grow: 1;
+}
+
+.splash-header {
+  display: block;
+  z-index: 1;
+}
