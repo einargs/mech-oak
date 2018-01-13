@@ -2,7 +2,7 @@
   <mat-sidenav mode="over" class="sidenav" #sidenav>
     <nav-list></nav-list>
   </mat-sidenav>
-  <mat-sidenav-content class="main-content">
+  <mat-sidenav-content class="main-container">
     <mat-toolbar color="primary" class="toolbar mat-elevation-z6">
       <button mat-icon-button class="toolbar-menu-button"
         (click)="sidenav.open()">
@@ -12,7 +12,9 @@
       <span class="toolbar-title">Oakland Engineering</span>
     </mat-toolbar>
     <splash-title class="splash-header mat-elevation-z6"></splash-title>
-    <router-outlet></router-outlet>
-
+    <section class="main-content">
+      <router-outlet></router-outlet>
+    </section>
+    <main-footer class="main-footer mat-elevation-z6"></main-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

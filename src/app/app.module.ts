@@ -12,6 +12,7 @@ import { SplashTitleComponent } from './splash-title/splash-title.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { NavListComponent } from './nav-list/nav-list.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
+import { MainFooterComponent } from './main-footer/main-footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProductsPageComponent } from './products-page/products-page.component';
     SplashTitleComponent,
     MainPageComponent,
     NavListComponent,
-    ProductsPageComponent
+    ProductsPageComponent,
+    MainFooterComponent
   ],
   imports: [
     BrowserModule,

@@ -16,9 +16,24 @@
   height: 100%;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.main-footer {
+  margin-top: 1.5em;
+  flex-shrink: 0;
+}
+
 .toolbar {
   position: relative;
   z-index: 3;
+  flex-shrink: 0;
 }
 
 .toolbar-menu-icon {
@@ -35,4 +50,5 @@
 .splash-header {
   display: block;
   z-index: 1;
+  flex-shrink: 0;
 }

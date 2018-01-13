@@ -1,0 +1,9 @@
+@import "~@angular/material/theming";
+
+@mixin main-footer-theme($theme) {
+  $primary: map-get($theme, primary);
+
+  .main-footer {
+    background-color: mat-color($primary);
+  }
+}
