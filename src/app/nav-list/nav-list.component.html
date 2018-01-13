@@ -1,6 +1,15 @@
-<mat-nav-list class="nav-list">
-  <a mat-list-item
-    *ngFor="let page of pages"
-    [href]="page.link"
-    class="nav-list-item">{{page.name}}</a>
+<mat-nav-list class="main-nav-list">
+  <ng-container *ngFor="let page of pages">
+    <a mat-list-item
+      [routerLink]="page.link"
+      routerLinkActive="on-page"
+      [routerLinkActiveOptions]="{exact:true}"
+      class="main-nav-item">{{page.name}}</a>
+    <mat-nav-list class="sub-nav-list">
+      <a mat-list-item *ngFor="let section of page.sections"
+        [routerLink]="page.link"
+        [fragment]="section"
+        class="sub-nav-item">{{section}}</a>
+    </mat-nav-list>
+  </ng-container>
 </mat-nav-list>

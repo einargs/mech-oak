@@ -1,7 +1,9 @@
 // Component theme mixin imports
 @import "./app/main-footer/_main-footer-theme.scss";
+@import "./app/nav-list/_nav-list-theme.scss";
 
 // Unified mixin
 @mixin mech-oak-app-theme($theme) {
   @include main-footer-theme($theme);
+  @include nav-list-theme($theme);
 }

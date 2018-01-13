@@ -1,0 +1,9 @@
+@import "~@angular/material/theming";
+
+@mixin nav-list-theme($theme) {
+  $accent: map-get($theme, accent);
+
+  .main-nav-item.on-page {
+    border-left-color: mat-color($accent) !important;
+  }
+}

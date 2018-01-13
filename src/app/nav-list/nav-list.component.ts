@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 interface Page {
   link: string;
   name: string;
+  sections: string[];
 }
 
 @Component({
@@ -12,7 +13,7 @@ interface Page {
 })
 export class NavListComponent {
   pages: Page[] = [
-    { link: "/", name: "Main" },
-    { link: "/products", name: "Products" }
+    { link: "", name: "Main", sections: ["about", "info"] },
+    { link: "/products", name: "Products", sections: ["3d-printing", "engraving", "t-shirts"] }
   ];
 }
