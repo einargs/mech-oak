@@ -11,13 +11,15 @@ import { environment } from '../environments/environment';
 import { SplashTitleComponent } from './splash-title/splash-title.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { NavListComponent } from './nav-list/nav-list.component';
+import { ProductsPageComponent } from './products-page/products-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashTitleComponent,
     MainPageComponent,
-    NavListComponent
+    NavListComponent,
+    ProductsPageComponent
   ],
   imports: [
     BrowserModule,
