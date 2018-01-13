@@ -1,4 +1,12 @@
-@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+@import "~@angular/material/theming";
+@import "./_theme.scss";
+@import "./_mech-oak-app-theme.scss";
+
+// Load the theme
+@include mat-core();
+@include angular-material-theme($theme);
+@include mech-oak-app-theme($theme);
+
 
 html {
   height: 100%;
